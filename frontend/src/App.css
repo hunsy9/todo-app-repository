@@ -1,0 +1,10 @@
+.app { max-width: 500px; margin: 40px auto; font-family: sans-serif; }
+h1 { text-align: center; }
+.add-form { display: flex; gap: 8px; margin-bottom: 16px; }
+.add-form input { flex: 1; padding: 8px; font-size: 16px; }
+.add-form button { padding: 8px 16px; }
+.todo-list { list-style: none; padding: 0; }
+.todo-list li { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid #eee; }
+.todo-list li.completed span { text-decoration: line-through; color: #999; }
+.todo-list li span { flex: 1; cursor: pointer; }
+.todo-list li button { background: none; border: none; cursor: pointer; font-size: 16px; }
