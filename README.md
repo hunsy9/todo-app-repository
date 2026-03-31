@@ -58,7 +58,9 @@ main 브랜치에 push하면 GitHub Actions가 자동으로:
 | 변수명 | 설명 | 예시 |
 |--------|------|------|
 | `ECR_REGISTRY` | ECR 레지스트리 URI | `123456789012.dkr.ecr.us-west-2.amazonaws.com` |
-| `AWS_ROLE_ARN` | GitHub OIDC용 IAM Role ARN | `arn:aws:iam::123456789012:role/github-actions-role` |
+| `AWS_ROLE_ARN` | GitHub OIDC용 IAM Role ARN | `arn:aws:iam::123456789012:role/github-actions-ecr-role` |
+| `AWS_REGION` | AWS 리전 | `us-west-2` |
+| `INGRESS_SECURITY_GROUP` | ALB Ingress에 적용할 Security Group ID | `sg-0123456789abcdef0` |
 
 ### Repository Secrets
 
