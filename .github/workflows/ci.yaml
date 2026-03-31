@@ -49,7 +49,7 @@ jobs:
             let content = Buffer.from(file.content, 'base64').toString();
             content = content.replace(
               /( +- name: todo-app\n[\s\S]*?image: ).+/m,
-              `$1${registry}/todo-app:${imageTag}`
+              `$1${registry}:${imageTag}`
             );
             await github.rest.repos.createOrUpdateFileContents({
               owner, repo, path,
